@@ -1,13 +1,9 @@
-class Solution(object):
-    def containsDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
+class Solution:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         freqs = {}
         for num in nums:
             if num in freqs:
                 return True
-            freqs[nums] = 1
-
+            freqs[num] = 1
+        
         return False
