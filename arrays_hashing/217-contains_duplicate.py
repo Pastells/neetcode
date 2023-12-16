@@ -1,5 +1,7 @@
+from typing import List
+
 class Solution:
-    def containsDuplicate(self, nums: list[int]) -> bool:
+    def containsDuplicate(self, nums: List[int]) -> bool:
         freqs = {}
         for num in nums:
             if num in freqs:
