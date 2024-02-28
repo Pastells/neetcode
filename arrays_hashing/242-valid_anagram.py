@@ -1,3 +1,10 @@
+"""
+# this would be a valid solution
+from collections import Counter
+return Counter(s) == Counter(t)
+"""
+
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         def count(word: str) -> dict:
